@@ -3,6 +3,8 @@ LABEL maintainer="cikupin@gmail.com"
 
 # Install mongodb 3.4.4
 RUN apk update
+RUN apk upgrade
+RUN apk add bash
 RUN apk add mongodb
 RUN apk add mongodb-tools
 
